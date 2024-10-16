@@ -2,22 +2,29 @@ package org.example;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 
-import org.example.exercise.resolver.Tuesday15D;
-import org.example.exercise.resolver.Tuesday15N;
+import org.example.exercise.ExerciseMediumLevelList;
+import org.example.exercise.resolver.Oct16D;
 
-import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+
 
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-    Tuesday15N test2 = new Tuesday15N();
-    System.out.println(test2.sumOfAllElementsPresentsInGivenArray(new int[] {1,2,3,4,5}));
-    int [] b = {1,2,3,4,5,4,4,2,3};
-    System.out.println(Arrays.toString(test2.removeDuplicate(b)));
-    System.out.println(Arrays.toString(test2.removeAllOccurrences(b)));
-    System.out.println(Arrays.toString(test2.removeElementsFromArray(b,4)));
-    System.out.println(test2.remove0FromGivenString("1002040"));
-    System.out.println(Arrays.deepToString(test2.transpose(new int[][] {{1, 2}, {3, 4}})));
+        ExerciseMediumLevelList test = new Oct16D();
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4,5,5,5,2,2,2);
+        List<String> text = Arrays.asList("kj0000f", "000sadf");
+        System.out.println("findMax: " + test.findMax(numbers));
+        System.out.println((test.removeAllOccurrences(numbers)));
+        System.out.println(test.removeDuplicate(numbers));
+        System.out.println("///");
+        List<List<Integer>> matrix = new ArrayList<>();
+        matrix.add(List.of(1,2));
+        matrix.add(List.of(3,4));
+        System.out.println(test.transpose(matrix));
+        System.out.println(test.remove0FromGivenString(text));
+
     }
 }

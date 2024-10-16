@@ -4,7 +4,7 @@ import org.example.exercise.ExerciseMediumLevel;
 
 import java.util.Arrays;
 
-public class Tuesday15N implements ExerciseMediumLevel {
+public class Oct15N implements ExerciseMediumLevel {
     @Override
     public int sumOfAllElementsPresentsInGivenArray(int[] input) {
         int result = 0;

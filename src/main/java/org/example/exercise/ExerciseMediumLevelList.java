@@ -101,6 +101,6 @@ public interface ExerciseMediumLevelList {
      * output = "124"
      * </pre>
      */
-    String remove0FromGivenString(String input);
+    List<String> remove0FromGivenString(List<String> input);
 
 }

@@ -4,7 +4,7 @@ import org.example.exercise.ExerciseLowLevel;
 
 import java.util.Arrays;
 
-public class Resolver implements ExerciseLowLevel {
+public class Oct14D implements ExerciseLowLevel {
     @Override
     public String reverse(String input) {
         char[] reverse = new char[input.length()];

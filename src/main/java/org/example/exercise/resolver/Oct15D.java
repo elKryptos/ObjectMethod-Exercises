@@ -4,7 +4,7 @@ import org.example.exercise.EserciziStringhe;
 
 import java.util.Arrays;
 
-public class Tuesday15D implements EserciziStringhe {
+public class Oct15D implements EserciziStringhe {
     final String vocals = "aeiou";
     final String consonants = "bcdfghjklmnpqrstvwxyz";
     @Override
